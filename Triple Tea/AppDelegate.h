@@ -6,10 +6,12 @@
 //  Copyright © 2019. Saurabh Sikka. All rights reserved.
 //
 
+@import AppKit;
 #import <Cocoa/Cocoa.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property (strong, nonatomic) NSWindow *window;
 
 @end
 

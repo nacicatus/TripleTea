@@ -13,6 +13,9 @@
 		F8E87F5922B16812006D3C07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8E87F5822B16812006D3C07 /* Assets.xcassets */; };
 		F8E87F5C22B16812006D3C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E87F5A22B16812006D3C07 /* Main.storyboard */; };
 		F8E87F6722B16813006D3C07 /* Triple_TeaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E87F6622B16813006D3C07 /* Triple_TeaTests.m */; };
+		F8E87F7422B191C7006D3C07 /* TTTBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E87F7322B191C7006D3C07 /* TTTBoard.m */; };
+		F8E87F7722B195A8006D3C07 /* TTTPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E87F7622B195A8006D3C07 /* TTTPlayer.m */; };
+		F8E87F7A22B1989B006D3C07 /* TTTAIStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E87F7922B1989B006D3C07 /* TTTAIStrategy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,12 @@
 		F8E87F6222B16813006D3C07 /* Triple TeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Triple TeaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E87F6622B16813006D3C07 /* Triple_TeaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Triple_TeaTests.m; sourceTree = "<group>"; };
 		F8E87F6822B16813006D3C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8E87F7222B191C7006D3C07 /* TTTBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTBoard.h; sourceTree = "<group>"; };
+		F8E87F7322B191C7006D3C07 /* TTTBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTBoard.m; sourceTree = "<group>"; };
+		F8E87F7522B195A8006D3C07 /* TTTPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTPlayer.h; sourceTree = "<group>"; };
+		F8E87F7622B195A8006D3C07 /* TTTPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTPlayer.m; sourceTree = "<group>"; };
+		F8E87F7822B1989B006D3C07 /* TTTAIStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAIStrategy.h; sourceTree = "<group>"; };
+		F8E87F7922B1989B006D3C07 /* TTTAIStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAIStrategy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +92,7 @@
 				F8E87F5022B16812006D3C07 /* AppDelegate.m */,
 				F8E87F5522B16812006D3C07 /* ViewController.h */,
 				F8E87F5622B16812006D3C07 /* ViewController.m */,
+				F8E87F7122B19121006D3C07 /* Game Model */,
 				F8E87F5822B16812006D3C07 /* Assets.xcassets */,
 				F8E87F5A22B16812006D3C07 /* Main.storyboard */,
 				F8E87F5D22B16812006D3C07 /* Info.plist */,
@@ -106,6 +116,19 @@
 				F8E87F6822B16813006D3C07 /* Info.plist */,
 			);
 			path = "Triple TeaTests";
+			sourceTree = "<group>";
+		};
+		F8E87F7122B19121006D3C07 /* Game Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8E87F7222B191C7006D3C07 /* TTTBoard.h */,
+				F8E87F7322B191C7006D3C07 /* TTTBoard.m */,
+				F8E87F7522B195A8006D3C07 /* TTTPlayer.h */,
+				F8E87F7622B195A8006D3C07 /* TTTPlayer.m */,
+				F8E87F7822B1989B006D3C07 /* TTTAIStrategy.h */,
+				F8E87F7922B1989B006D3C07 /* TTTAIStrategy.m */,
+			);
+			name = "Game Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +233,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8E87F5722B16812006D3C07 /* ViewController.m in Sources */,
+				F8E87F7722B195A8006D3C07 /* TTTPlayer.m in Sources */,
+				F8E87F7422B191C7006D3C07 /* TTTBoard.m in Sources */,
 				F8E87F5422B16812006D3C07 /* main.m in Sources */,
 				F8E87F5122B16812006D3C07 /* AppDelegate.m in Sources */,
+				F8E87F7A22B1989B006D3C07 /* TTTAIStrategy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
