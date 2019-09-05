@@ -23,17 +23,12 @@
       <height>621</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QWidget" name="gridLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>19</x>
-      <y>9</y>
-      <width>1051</width>
-      <height>601</height>
-     </rect>
+    <property name="autoFillBackground">
+     <bool>true</bool>
     </property>
-    <layout class="QGridLayout" name="gridLayout"/>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
